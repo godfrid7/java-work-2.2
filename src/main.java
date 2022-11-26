@@ -1,21 +1,19 @@
 public class main {
     public static void main(String[] args) {
 
-        int bonus;
-        int client = 200;
+        int cost = 200;
+        int add = 1100;
 
-        if (client > 1000) {
-            System.out.println(bonus = 1);
-        } else {
-            System.out.println(client);
+        int bonus = 0;
+
+        if (add > 1000) {
+            bonus = add / 100;
         }
 
-         client = 1200;
-        if (client > 1100) {
-            System.out.println(client + 11);
-        } else {
-            System.out.println(client);
+        int finalcost = cost + add + bonus;
 
-        }
+        System.out.println("Итоговый счет: " + finalcost);
+        System.out.println("Бонус: " + bonus);
+
     }
 }
